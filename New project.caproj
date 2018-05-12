@@ -313,6 +313,9 @@
                 <behavior-type name="Solid" sid="481028755452032">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="Sine" sid="122883213035198">
+                    <behavior id="Sin" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="214256952983391" speed="5">
@@ -1241,7 +1244,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="energy" sid="634022029381058">
+        <object-type global="1" name="energy" sid="634022029381058">
             <plugin id="TiledBg" />
             <instance-variables>
                 <instance-variable name="max_width" sid="473308091726976" type="number" />
@@ -1276,11 +1279,6 @@
         </object-type>
         <object-type name="Tilemap2" sid="332456539638998">
             <plugin id="Tilemap" />
-            <behaviors>
-                <behavior-type name="Solid" sid="308635911153533">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <texture original-source="C:\Users\su\Documents\topdwon\snowWIP.png" />
             <tiles />
         </object-type>
@@ -1304,9 +1302,6 @@
         <object-type name="green_slime" sid="297386450091941">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Sine" sid="661076656236989">
-                    <behavior id="Sin" />
-                </behavior-type>
                 <behavior-type name="LineOfSight" sid="600085163078201">
                     <behavior id="LOS" />
                 </behavior-type>
@@ -1612,6 +1607,26 @@
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                             <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hitbox" sid="803042094403779">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="143715920146015">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="859543175885639" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.064" y="0.12" />
+                            <point x="1" y="0" />
+                            <point x="0.832" y="0.904" />
+                            <point x="0.152" y="0.916" />
                         </collision-poly>
                     </frame>
                 </animation>

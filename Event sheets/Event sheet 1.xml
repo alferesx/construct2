@@ -263,7 +263,7 @@
         </event-block>
         <event-block sid="402829446569668">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="336045287454571" type="Player">
+                <condition id="1" name="Is overlapping another object" sid="336045287454571" type="Player">
                     <param id="0" name="Object">boss</param>
                 </condition>
             </conditions>
@@ -288,7 +288,7 @@
         </event-block>
         <event-block sid="661026063303232">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="461778548394120" type="bullet">
+                <condition id="1" name="Is overlapping another object" sid="461778548394120" type="bullet">
                     <param id="0" name="Object">boss</param>
                 </condition>
             </conditions>
@@ -338,6 +338,7 @@
             <actions>
                 <action id="-9" name="Destroy" sid="485843537862936" type="boss" />
                 <action id="-9" name="Destroy" sid="742845938618481" type="Sprite" />
+                <action id="-9" name="Destroy" sid="453054190890725" type="green_slime" />
             </actions>
         </event-block>
         <event-block sid="403984105554325">

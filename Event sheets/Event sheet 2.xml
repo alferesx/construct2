@@ -32,19 +32,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block disabled="1" sid="431417207587633">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="473688931480013" type="System" />
-            </conditions>
-            <actions>
-                <action id="-1" name="Set X" sid="867144223722557" type="green_slime">
-                    <param id="0" name="X">boss.X</param>
-                </action>
-                <action id="-2" name="Set Y" sid="273207817802854" type="green_slime">
-                    <param id="0" name="Y">boss.Y</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="791127381670153">
             <conditions>
                 <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="499174172961122" type="green_slime">
@@ -52,22 +39,10 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-1" name="Set X" sid="111464507663483" type="boss">
-                    <param id="0" name="X">green_slime.X</param>
-                </action>
-                <action id="-2" name="Set Y" sid="276858492491959" type="boss">
-                    <param id="0" name="Y">green_slime.Y</param>
-                </action>
-                <action behavior="Sine" id="0" name="Set active" sid="226511179338623" type="green_slime">
+                <action behavior="Sine" id="0" name="Set active" sid="226511179338623" type="boss">
                     <param id="0" name="State">1</param>
                 </action>
             </actions>
-        </event-block>
-        <event-block sid="420812237626671">
-            <conditions>
-                <condition id="-22" name="Else" sid="960545019877362" type="System" />
-            </conditions>
-            <actions />
         </event-block>
         <event-block sid="749618094955890">
             <conditions>
@@ -76,15 +51,32 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Sine" id="0" name="Set active" sid="934486167561733" type="green_slime">
+                <action behavior="Sine" id="0" name="Set active" sid="934486167561733" type="boss">
                     <param id="0" name="State">0</param>
                 </action>
-                <action id="-1" name="Set X" sid="905912206775007" type="green_slime">
+            </actions>
+        </event-block>
+        <event-block sid="649336338997344">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="274259037302881" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="203125541575459" type="green_slime">
                     <param id="0" name="X">boss.X</param>
                 </action>
-                <action id="-2" name="Set Y" sid="563419666719351" type="green_slime">
+                <action id="-2" name="Set Y" sid="397818756171115" type="green_slime">
                     <param id="0" name="Y">boss.Y</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="858523905778667">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="946762695708501" type="bullet">
+                    <param id="0" name="Object">hitbox</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="252401258416894" type="bullet" />
             </actions>
         </event-block>
     </events>
