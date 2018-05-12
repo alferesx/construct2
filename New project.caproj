@@ -21,6 +21,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -1282,6 +1283,339 @@
             </behaviors>
             <texture original-source="C:\Users\su\Documents\topdwon\snowWIP.png" />
             <tiles />
+        </object-type>
+        <object-type name="Sprite3" sid="158104884368809">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="355893407532303" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="164581554564604">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475191955211321" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="green_slime" sid="297386450091941">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="661076656236989">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="600085163078201">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="483386578505320" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.555556" original-source="C:\Users\su\Documents\topdwon\slimes\slime_30.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.222222" />
+                            <point x="1" y="0.444444" />
+                            <point x="0.916667" y="0.888889" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.888889" />
+                            <point x="0" y="0.444444" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.6" original-source="C:\Users\su\Documents\topdwon\slimes\slime_31.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.222222" />
+                            <point x="1" y="0.444444" />
+                            <point x="0.916667" y="0.888889" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.888889" />
+                            <point x="0" y="0.444444" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="11" loop="0" name="move" pingpong="0" repeatcount="1" repeatto="0" sid="193579610928334" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.555556" original-source="C:\Users\su\Documents\topdwon\slimes\slime_30.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.222222" />
+                            <point x="1" y="0.444444" />
+                            <point x="0.916667" y="0.888889" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.888889" />
+                            <point x="0" y="0.444444" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_20.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_21.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_22.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_23.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_24.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.545455" original-source="C:\Users\su\Documents\topdwon\slimes\slime_25.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_26.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.545455" original-source="C:\Users\su\Documents\topdwon\slimes\slime_27.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_28.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.571429" original-source="C:\Users\su\Documents\topdwon\slimes\slime_29.png" />
+                </animation>
+                <animation framecount="11" loop="1" name="attack" pingpong="0" repeatcount="1" repeatto="0" sid="534009563808073" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.555556" original-source="C:\Users\su\Documents\topdwon\slimes\slime_30.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.222222" />
+                            <point x="1" y="0.444444" />
+                            <point x="0.916667" y="0.888889" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.888889" />
+                            <point x="0" y="0.444444" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_31.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.2" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.2" />
+                            <point x="1" y="0.5" />
+                            <point x="0.916667" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_32.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.2" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.2" />
+                            <point x="1" y="0.5" />
+                            <point x="0.916667" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.545455" original-source="C:\Users\su\Documents\topdwon\slimes\slime_33.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.181818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.181818" />
+                            <point x="1" y="0.454545" />
+                            <point x="0.916667" y="0.909091" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.909091" />
+                            <point x="0" y="0.454545" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.545455" original-source="C:\Users\su\Documents\topdwon\slimes\slime_34.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.181818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.181818" />
+                            <point x="1" y="0.454545" />
+                            <point x="0.916667" y="0.909091" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.909091" />
+                            <point x="0" y="0.454545" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.545455" original-source="C:\Users\su\Documents\topdwon\slimes\slime_36.png">
+                        <collision-poly>
+                            <point x="0.0833333" y="0.0909091" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.181818" />
+                            <point x="1" y="0.454545" />
+                            <point x="0.916667" y="0.909091" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.909091" />
+                            <point x="0" y="0.454545" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.545455" original-source="C:\Users\su\Documents\topdwon\slimes\slime_37.png">
+                        <collision-poly>
+                            <point x="0.0833333" y="0.0909091" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.181818" />
+                            <point x="1" y="0.454545" />
+                            <point x="0.916667" y="0.909091" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.909091" />
+                            <point x="0" y="0.454545" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.545455" original-source="C:\Users\su\Documents\topdwon\slimes\slime_38.png">
+                        <collision-poly>
+                            <point x="0.0833333" y="0.0909091" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.181818" />
+                            <point x="1" y="0.454545" />
+                            <point x="0.916667" y="0.909091" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.909091" />
+                            <point x="0" y="0.454545" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_39.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.2" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.2" />
+                            <point x="1" y="0.5" />
+                            <point x="0.916667" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_40.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.2" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.2" />
+                            <point x="1" y="0.5" />
+                            <point x="0.916667" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_41.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.2" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.2" />
+                            <point x="1" y="0.5" />
+                            <point x="0.916667" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="10" loop="0" name="dying" pingpong="0" repeatcount="1" repeatto="0" sid="771504425745583" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_40.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.2" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.2" />
+                            <point x="1" y="0.5" />
+                            <point x="0.916667" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_41.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.2" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.2" />
+                            <point x="1" y="0.5" />
+                            <point x="0.916667" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_42.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.2" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.2" />
+                            <point x="1" y="0.5" />
+                            <point x="0.916667" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_43.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.2" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.2" />
+                            <point x="1" y="0.5" />
+                            <point x="0.916667" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_44.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.2" />
+                            <point x="0.5" y="0.1" />
+                            <point x="0.833333" y="0.2" />
+                            <point x="1" y="0.5" />
+                            <point x="0.916667" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_45.png">
+                        <collision-poly>
+                            <point x="0.0833333" y="0.125" />
+                            <point x="0.916667" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.916667" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.571429" original-source="C:\Users\su\Documents\topdwon\slimes\slime_46.png">
+                        <collision-poly>
+                            <point x="0.0833333" y="0.142857" />
+                            <point x="0.5" y="0.285714" />
+                            <point x="0.916667" y="0.142857" />
+                            <point x="1" y="0.428571" />
+                            <point x="0.916667" y="0.857143" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.857143" />
+                            <point x="0" y="0.428571" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_47.png">
+                        <collision-poly>
+                            <point x="0.0833333" y="0.166667" />
+                            <point x="0.5" y="0.333333" />
+                            <point x="0.916667" y="0.166667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.916667" y="0.833333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.833333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.6" original-source="C:\Users\su\Documents\topdwon\slimes\slime_48.png">
+                        <collision-poly>
+                            <point x="0.0833333" y="0.2" />
+                            <point x="0.5" y="0.4" />
+                            <point x="0.916667" y="0.2" />
+                            <point x="1" y="0.4" />
+                            <point x="0.916667" y="0.8" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.8" />
+                            <point x="0" y="0.4" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Documents\topdwon\slimes\slime_49.png">
+                        <collision-poly>
+                            <point x="0.0833333" y="0.25" />
+                            <point x="0.916667" y="0.25" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

@@ -4,5 +4,88 @@
     <name>Event sheet 2</name>
     <events>
         <include>Event sheet 1</include>
+        <event-block sid="448354062579407">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="601705420222774" type="boss">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">Player.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="309986183681435" type="green_slime">
+                    <param id="0" name="Animation">&quot;move&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="680124662643539">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="352932932893951" type="boss">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">Player.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="544074017615884" type="green_slime">
+                    <param id="0" name="Animation">&quot;move&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="431417207587633">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="473688931480013" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="867144223722557" type="green_slime">
+                    <param id="0" name="X">boss.X</param>
+                </action>
+                <action id="-2" name="Set Y" sid="273207817802854" type="green_slime">
+                    <param id="0" name="Y">boss.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="791127381670153">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="499174172961122" type="green_slime">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="111464507663483" type="boss">
+                    <param id="0" name="X">green_slime.X</param>
+                </action>
+                <action id="-2" name="Set Y" sid="276858492491959" type="boss">
+                    <param id="0" name="Y">green_slime.Y</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="226511179338623" type="green_slime">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="420812237626671">
+            <conditions>
+                <condition id="-22" name="Else" sid="960545019877362" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="749618094955890">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="999930928410316" type="boss">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Sine" id="0" name="Set active" sid="934486167561733" type="green_slime">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="905912206775007" type="green_slime">
+                    <param id="0" name="X">boss.X</param>
+                </action>
+                <action id="-2" name="Set Y" sid="563419666719351" type="green_slime">
+                    <param id="0" name="Y">boss.Y</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
