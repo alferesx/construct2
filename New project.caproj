@@ -15,11 +15,13 @@
         <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
@@ -62,6 +64,9 @@
             <behaviors>
                 <behavior-type name="8Direction" sid="931080332457625">
                     <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="519226326315536">
+                    <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -1258,6 +1263,25 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="417367992376371">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\su\Desktop\adventure jam\DawnLike\Objects\Floor.png" />
+        </object-type>
+        <object-type name="Tilemap" sid="171577662528458">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\su\Desktop\adventure jam\DawnLike\Objects\Tree0.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap2" sid="332456539638998">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="308635911153533">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\su\Documents\topdwon\snowWIP.png" />
+            <tiles />
         </object-type>
     </object-folder>
     <families />
