@@ -32,30 +32,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="791127381670153">
-            <conditions>
-                <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="499174172961122" type="green_slime">
-                    <param id="0" name="Object">Player</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Sine" id="0" name="Set active" sid="226511179338623" type="boss">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="749618094955890">
-            <conditions>
-                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="999930928410316" type="boss">
-                    <param id="0" name="Object">Player</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Sine" id="0" name="Set active" sid="934486167561733" type="boss">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="649336338997344">
             <conditions>
                 <condition id="-1" name="Every tick" sid="274259037302881" type="System" />

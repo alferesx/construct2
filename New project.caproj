@@ -21,7 +21,6 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
-        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -304,19 +303,17 @@
                 <behavior-type name="Bullet" sid="880645800615067">
                     <behavior id="Bullet" />
                 </behavior-type>
-                <behavior-type name="LineOfSight" sid="836290117978768">
-                    <behavior id="LOS" />
-                </behavior-type>
                 <behavior-type name="8Direction" sid="435788214339856">
                     <behavior id="EightDir" />
                 </behavior-type>
                 <behavior-type name="Solid" sid="481028755452032">
                     <behavior id="solid" />
                 </behavior-type>
-                <behavior-type name="Sine" sid="122883213035198">
-                    <behavior id="Sin" />
-                </behavior-type>
             </behaviors>
+            <container>
+                <type>green_slime</type>
+                <type>boss</type>
+            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="214256952983391" speed="5">
                     <frame duration="1" hotspotX="0.526316" hotspotY="0.571429" original-source="C:\Users\su\Desktop\topdwon\bunnysheet_01.png">
@@ -1306,6 +1303,10 @@
                     <behavior id="LOS" />
                 </behavior-type>
             </behaviors>
+            <container>
+                <type>green_slime</type>
+                <type>boss</type>
+            </container>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="483386578505320" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.555556" original-source="C:\Users\su\Documents\topdwon\slimes\slime_30.png">
@@ -1633,7 +1634,19 @@
             </animation-folder>
         </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="inimigos" plugin-id="Sprite" sid="995231065876446">
+            <members>
+                <member>boss</member>
+                <member>green_slime</member>
+            </members>
+            <behaviors>
+                <behavior-type name="LineOfSight2" sid="761246742042019">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
     <layout-folder>
         <layout>Layout 1.xml</layout>
         <layout>Layout 2.xml</layout>

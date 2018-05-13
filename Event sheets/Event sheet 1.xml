@@ -196,7 +196,7 @@
         </event-block>
         <event-block sid="998738771177938">
             <conditions>
-                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="819661055714443" type="boss">
+                <condition behavior="LineOfSight2" id="0" name="Has LOS to object" sid="213503239326463" type="boss">
                     <param id="0" name="Object">Player</param>
                 </condition>
             </conditions>
@@ -209,14 +209,6 @@
                     <param id="1" name="Y">Player.y</param>
                 </action>
             </actions>
-        </event-block>
-        <event-block sid="924563686124501">
-            <conditions>
-                <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="855401085240033" type="boss">
-                    <param id="0" name="Object">Player</param>
-                </condition>
-            </conditions>
-            <actions />
         </event-block>
         <event-block sid="372053465923150">
             <conditions>
