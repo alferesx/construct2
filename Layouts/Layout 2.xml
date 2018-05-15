@@ -302,6 +302,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -429,6 +432,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -469,6 +475,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -509,6 +518,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -549,6 +561,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -589,6 +604,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -629,6 +647,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -669,6 +690,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -709,6 +733,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -749,6 +776,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -789,6 +819,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -829,6 +862,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -869,6 +905,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -909,6 +948,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1220,6 +1262,74 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="rocket_bullet" uid="35">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-160</x>
+                        <y>-128</y>
+                        <z>0</z>
+                        <width>18</width>
+                        <height>9</height>
+                        <depth>0</depth>
+                        <hotspotX>0.538461566</hotspotX>
+                        <hotspotY>0.571428597</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="laser_bullet" uid="43">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>-128</y>
+                        <z>0</z>
+                        <width>18</width>
+                        <height>9</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -1344,6 +1454,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1384,6 +1497,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1424,6 +1540,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1464,6 +1583,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1504,6 +1626,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1544,6 +1669,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1584,6 +1712,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1624,6 +1755,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1664,6 +1798,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1704,6 +1841,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1744,6 +1884,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1784,6 +1927,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1824,6 +1970,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1864,6 +2013,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1904,6 +2056,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1944,6 +2099,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -1984,6 +2142,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2024,6 +2185,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2064,6 +2228,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2104,6 +2271,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2144,6 +2314,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2184,6 +2357,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2224,6 +2400,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2264,6 +2443,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2304,6 +2486,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2344,6 +2529,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2384,6 +2572,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2424,6 +2615,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2464,6 +2658,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2504,6 +2701,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2544,6 +2744,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2584,6 +2787,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2624,6 +2830,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>
@@ -2664,6 +2873,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <hp>200</hp>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
                             <properties>

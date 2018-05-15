@@ -1301,6 +1301,9 @@
         </object-type>
         <object-type name="green_slime" sid="297386450091941">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="hp" sid="435019790054016" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="LineOfSight" sid="600085163078201">
                     <behavior id="LOS" />
@@ -1361,7 +1364,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\su\Documents\topdwon\slimes\slime_28.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\su\Documents\topdwon\slimes\slime_29.png" />
                 </animation>
-                <animation framecount="11" loop="1" name="attack" pingpong="0" repeatcount="1" repeatto="0" sid="534009563808073" speed="5">
+                <animation framecount="11" loop="0" name="attack" pingpong="0" repeatcount="1" repeatto="0" sid="534009563808073" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\su\Documents\topdwon\slimes\slime_30.png">
                         <image-point name="Imagepoint 1" x="0.5" y="0.555556" />
                         <collision-poly>
@@ -1497,8 +1500,8 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="10" loop="0" name="dying" pingpong="0" repeatcount="1" repeatto="0" sid="771504425745583" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\su\Documents\topdwon\slimes\slime_40.png">
+                <animation framecount="10" loop="0" name="die" pingpong="0" repeatcount="1" repeatto="0" sid="771504425745583" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1.1" original-source="C:\Users\su\Documents\topdwon\slimes\slime_40.png">
                         <collision-poly>
                             <point x="0.166667" y="0.2" />
                             <point x="0.5" y="0" />
@@ -1799,7 +1802,7 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="991363010669744" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\su\Downloads\topdown_shooter\topdown_shooter\guns\laser\laser_side.png">
-                        <image-point name="Imagepoint 1" x="1.0625" y="0.5" />
+                        <image-point name="Imagepoint 1" x="0.9375" y="0.5" />
                         <image-point name="spawn" x="0.5" y="-0.5" />
                         <collision-poly>
                             <point x="0.0625" y="0.125" />
@@ -1849,6 +1852,44 @@
         </object-type>
         <object-type name="Function" sid="318914438889652">
             <plugin id="Function" />
+        </object-type>
+        <object-type name="rocket_bullet" sid="924493768264115">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="131421105396084">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582433278196776" speed="5">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.571429" original-source="C:\Users\su\Downloads\topdown_shooter\topdown_shooter\other\rocket.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.461538" y="0" />
+                            <point x="0.846154" y="0.285714" />
+                            <point x="1" y="0.428571" />
+                            <point x="0.846154" y="0.714286" />
+                            <point x="0.461538" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="laser_bullet" sid="180583537362141">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="669281949849332">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293184710423928" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>

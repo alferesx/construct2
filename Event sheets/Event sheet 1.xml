@@ -275,9 +275,15 @@
                 <action id="-9" name="Destroy" sid="499161261880245" type="Player" />
             </actions>
         </event-block>
-        <event-block sid="661026063303232">
+        <event-block any="1" sid="661026063303232">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="461778548394120" type="bullet">
+                    <param id="0" name="Object">boss</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="113190190570112" type="rocket_bullet">
+                    <param id="0" name="Object">boss</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="737255980584678" type="laser_bullet">
                     <param id="0" name="Object">boss</param>
                 </condition>
             </conditions>
