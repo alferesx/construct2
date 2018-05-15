@@ -123,13 +123,16 @@
         <event-block sid="157816189584609">
             <conditions>
                 <condition id="-1" name="Every tick" sid="702583898396328" type="System" />
+                <condition id="-8" name="Is boolean instance variable set" sid="291280295561285" type="guns">
+                    <param id="0" name="Instance variable">ativo</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-3" name="Set position" sid="502461008754030" type="gun">
+                <action id="-3" name="Set position" sid="502461008754030" type="guns">
                     <param id="0" name="X">Player.X</param>
                     <param id="1" name="Y">Player.Y</param>
                 </action>
-                <action id="-8" name="Set angle" sid="890970078086109" type="gun">
+                <action id="-8" name="Set angle" sid="890970078086109" type="guns">
                     <param id="0" name="Angle">angle(Self.X,Self.Y,Mouse.X,Mouse.Y)</param>
                 </action>
             </actions>
@@ -173,24 +176,11 @@
                 <condition id="2" name="Mouse button is down" sid="265311753700826" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                 </condition>
-                <condition id="-6" name="Every X seconds" sid="255974796419815" type="System">
-                    <param id="0" name="Interval (seconds)">0.2</param>
-                </condition>
-                <condition id="-7" name="Compare instance variable" sid="217358209139047" type="Player">
-                    <param id="0" name="Instance variable">our_energy</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
             </conditions>
             <actions>
-                <action id="0" name="Spawn another object" sid="444767164513101" type="gun">
-                    <param id="0" name="Object">bullet</param>
-                    <param id="1" name="Layer">&quot;game&quot;</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="-12" name="Subtract from" sid="741429276386759" type="Player">
-                    <param id="0" name="Instance variable">our_energy</param>
-                    <param id="1" name="Value">10</param>
+                <action id="0" name="Call function" sid="838242238688505" type="Function">
+                    <param id="0" name="Name">&quot;gun_bullet&quot;</param>
+                    <param id="1" name="Parameter {n}">Player.weapon</param>
                 </action>
             </actions>
         </event-block>
@@ -234,6 +224,13 @@
                 </action>
                 <action id="-5" name="Set width" sid="640785889392342" type="energy">
                     <param id="0" name="Width">Self.max_width</param>
+                </action>
+                <action id="1" name="Set cursor from sprite" sid="426074529798952" type="Mouse">
+                    <param id="0" name="Sprite">cursor</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="703625619607214" type="gun">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>

@@ -55,5 +55,397 @@
                 <action id="-9" name="Destroy" sid="252401258416894" type="bullet" />
             </actions>
         </event-block>
+        <event-block sid="258473603611748">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="978540783507731" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="902613483859868" type="green_slime">
+                    <param id="0" name="Object">slime_bullet</param>
+                    <param id="1" name="Layer">&quot;game&quot;</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Bullet2" id="0" name="Set speed" sid="582273111324666" type="slime_bullet">
+                    <param id="0" name="Speed">100</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="609073369883480" type="slime_bullet">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="303981993286257">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="749719960425472" type="slime_b">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="740003743060324" type="Player">
+                    <param id="0" name="Instance variable">our_health</param>
+                    <param id="1" name="Value">50</param>
+                </action>
+                <action id="-9" name="Destroy" sid="904688226863408" type="slime_b" />
+            </actions>
+        </event-block>
+        <event-block sid="208757525388984">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="258890306567170" type="Player">
+                    <param id="0" name="Instance variable">our_health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="677071537492546" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="531344336289252">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="897209471879663" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="349065288543384" type="System">
+                    <param id="0" name="Object to create">mg</param>
+                    <param id="1" name="Layer">&quot;game&quot;</param>
+                    <param id="2" name="X">spawn1.X</param>
+                    <param id="3" name="Y">spawn1.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="475701858464934">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="552470506731331" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="422401751043874" type="System">
+                    <param id="0" name="Object to create">shotgun</param>
+                    <param id="1" name="Layer">&quot;game&quot;</param>
+                    <param id="2" name="X">spawn2.X</param>
+                    <param id="3" name="Y">spawn2.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="576161272393508">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="897699285704612" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="894976834707669" type="System">
+                    <param id="0" name="Object to create">rocket</param>
+                    <param id="1" name="Layer">&quot;game&quot;</param>
+                    <param id="2" name="X">spawn4.X</param>
+                    <param id="3" name="Y">spawn4.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="641819840371561">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="406098101734962" type="System">
+                    <param id="0" name="Interval (seconds)">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="700763088052276" type="System">
+                    <param id="0" name="Object to create">laser</param>
+                    <param id="1" name="Layer">&quot;game&quot;</param>
+                    <param id="2" name="X">spawn3.X</param>
+                    <param id="3" name="Y">spawn3.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="561452871064966">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="909814787008906" type="Player">
+                    <param id="0" name="Object">shotgun</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="461713852899602" type="gun">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="440776404882493" type="rocket">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="965723773576499" type="mg">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="396138343587024" type="shotgun">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="462201311601279" type="laser">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="784752641554226" type="Player">
+                    <param id="0" name="Instance variable">weapon</param>
+                    <param id="1" name="Value">&quot;shotgun&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="163514872928594">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="965078211448816" type="Player">
+                    <param id="0" name="Object">mg</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="121542225767438" type="gun">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="842338011178888" type="rocket">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="955235165975372" type="mg">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="569030834500378" type="shotgun">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="332482503542748" type="laser">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="591724999906273" type="Player">
+                    <param id="0" name="Instance variable">weapon</param>
+                    <param id="1" name="Value">&quot;mg&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="261245938985328">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="132172809259907" type="Player">
+                    <param id="0" name="Object">rocket</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="204162469254563" type="gun">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="502609762896117" type="rocket">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="954111007211355" type="mg">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="299260651970351" type="shotgun">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="390543503528058" type="laser">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="940369067402282" type="Player">
+                    <param id="0" name="Instance variable">weapon</param>
+                    <param id="1" name="Value">&quot;rocket&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="958868418899861">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="354213346206625" type="Player">
+                    <param id="0" name="Object">laser</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="821173156221182" type="gun">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="427261052005002" type="rocket">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="494735368442846" type="mg">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="837203923814319" type="shotgun">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="201305755839042" type="laser">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="631397399143005" type="Player">
+                    <param id="0" name="Instance variable">weapon</param>
+                    <param id="1" name="Value">&quot;laser&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="551558316119556">
+            <conditions>
+                <condition id="0" name="On function" sid="223253083312624" type="Function">
+                    <param id="0" name="Name">&quot;gun_bullet&quot;</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="123935653804471" type="guns">
+                    <param id="0" name="Instance variable">ativo</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="102195466147147" type="Player">
+                    <param id="0" name="Instance variable">our_energy</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="597528812340026">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="989349739793306" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;gun&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="378471241095475" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="314242348199280" type="Player">
+                            <param id="0" name="Instance variable">our_energy</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="208105141302612">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="380173089830192" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;shotgun&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="367039832739846" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="625828674168911" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="541299292285824" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">3</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="852868198837307" type="Player">
+                            <param id="0" name="Instance variable">our_energy</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="391034841881312">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="605585178762415" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;rocket&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="280112606482923" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="934021294794217" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="898995677432052" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">3</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="873658673073093" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">4</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="904231775736040" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">5</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="782232309129114" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">6</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="427466462639792" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">7</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="531759327053987" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">8</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="685410665295124" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">9</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="211942362796733" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">10</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="380760730326146" type="Player">
+                            <param id="0" name="Instance variable">our_energy</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="304635813850175">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="476611754566736" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;mg&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="493811777776372" type="guns">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="797124761300741" type="Player">
+                            <param id="0" name="Instance variable">our_energy</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>

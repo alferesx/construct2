@@ -41,6 +41,7 @@
                         <max_health>200</max_health>
                         <our_energy>200</our_energy>
                         <max_energy>200</max_energy>
+                        <weapon>gun</weapon>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -82,6 +83,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <ativo>false</ativo>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
