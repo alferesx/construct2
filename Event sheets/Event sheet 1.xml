@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <include>event_guns</include>
         <event-block sid="453354958984430">
             <conditions>
                 <condition id="2" name="Key is down" sid="703948756745099" type="Keyboard">
@@ -261,6 +262,12 @@
                     <param id="0" name="Instance variable">our_health</param>
                     <param id="1" name="Value">50</param>
                 </action>
+                <action id="0" name="Play" sid="856100227784040" type="Audio">
+                    <param id="0" name="Audio file">pain1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="641605218678381">
@@ -272,6 +279,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="696242793746657" type="Audio">
+                    <param id="0" name="Audio file">deathh</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-9" name="Destroy" sid="499161261880245" type="Player" />
             </actions>
         </event-block>
