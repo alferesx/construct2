@@ -43,6 +43,9 @@
                 <action id="-2" name="Set Y" sid="397818756171115" type="green_slime">
                     <param id="0" name="Y">boss.Y</param>
                 </action>
+                <action id="-15" name="Set visible" sid="672978394852895" type="aviso">
+                    <param id="0" name="Visibility">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="858523905778667">
@@ -53,6 +56,26 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="252401258416894" type="bullet" />
+            </actions>
+        </event-block>
+        <event-block sid="967857249502723">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="907793484888072" type="rocket_bullet">
+                    <param id="0" name="Object">hitbox</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="806139445315619" type="rocket_bullet" />
+            </actions>
+        </event-block>
+        <event-block sid="673182328379102">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="703519397020382" type="laser_bullet">
+                    <param id="0" name="Object">background_limit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="411191165197284" type="laser_bullet" />
             </actions>
         </event-block>
         <event-block sid="258473603611748">
@@ -73,6 +96,9 @@
                 <action id="-22" name="Set angle toward position" sid="609073369883480" type="slime_bullet">
                     <param id="0" name="X">Player.X</param>
                     <param id="1" name="Y">Player.Y</param>
+                </action>
+                <action id="-16" name="Wait" sid="326010593048533" type="System">
+                    <param id="0" name="Seconds">1.0</param>
                 </action>
             </actions>
         </event-block>
@@ -111,7 +137,7 @@
         <event-block sid="531344336289252">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="897209471879663" type="System">
-                    <param id="0" name="Interval (seconds)">1</param>
+                    <param id="0" name="Interval (seconds)">5</param>
                 </condition>
             </conditions>
             <actions>
@@ -121,12 +147,15 @@
                     <param id="2" name="X">spawn1.X</param>
                     <param id="3" name="Y">spawn1.Y</param>
                 </action>
+                <action id="-16" name="Wait" sid="402445180546029" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="475701858464934">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="552470506731331" type="System">
-                    <param id="0" name="Interval (seconds)">2</param>
+                    <param id="0" name="Interval (seconds)">8</param>
                 </condition>
             </conditions>
             <actions>
@@ -136,12 +165,15 @@
                     <param id="2" name="X">spawn2.X</param>
                     <param id="3" name="Y">spawn2.Y</param>
                 </action>
+                <action id="-16" name="Wait" sid="706203104690842" type="System">
+                    <param id="0" name="Seconds">8</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="576161272393508">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="897699285704612" type="System">
-                    <param id="0" name="Interval (seconds)">3</param>
+                    <param id="0" name="Interval (seconds)">20</param>
                 </condition>
             </conditions>
             <actions>
@@ -151,12 +183,15 @@
                     <param id="2" name="X">spawn4.X</param>
                     <param id="3" name="Y">spawn4.Y</param>
                 </action>
+                <action id="-16" name="Wait" sid="804585854006859" type="System">
+                    <param id="0" name="Seconds">20</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="641819840371561">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="406098101734962" type="System">
-                    <param id="0" name="Interval (seconds)">4</param>
+                    <param id="0" name="Interval (seconds)">10</param>
                 </condition>
             </conditions>
             <actions>
@@ -165,6 +200,9 @@
                     <param id="1" name="Layer">&quot;game&quot;</param>
                     <param id="2" name="X">spawn3.X</param>
                     <param id="3" name="Y">spawn3.Y</param>
+                </action>
+                <action id="-16" name="Wait" sid="478303547271002" type="System">
+                    <param id="0" name="Seconds">10</param>
                 </action>
             </actions>
         </event-block>
@@ -190,6 +228,32 @@
                     <param id="0" name="Audio file">qubodupSlimeMonster-attack1</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="166033339260505">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="296018801760274" type="Player" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="803340864348086" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="343842903710672">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="598222963049424" type="Player">
+                    <param id="0" name="Object">next_layout</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-43" name="Go to next/previous layout" sid="780632049025034" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+                <action id="0" name="Play" sid="530758225483974" type="Audio">
+                    <param id="0" name="Audio file">fight_looped</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>

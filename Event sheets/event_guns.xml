@@ -266,6 +266,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="615488664252798" type="Audio">
+                            <param id="0" name="Audio file">rocket_launch</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="0" name="Spawn another object" sid="135217610452300" type="guns">
                             <param id="0" name="Object">rocket_bullet</param>
                             <param id="1" name="Layer">&quot;game&quot;</param>
@@ -276,7 +282,7 @@
                             <param id="1" name="Value">100</param>
                         </action>
                         <action behavior="Bullet" id="0" name="Set speed" sid="361848700776218" type="rocket_bullet">
-                            <param id="0" name="Speed">100</param>
+                            <param id="0" name="Speed">300</param>
                         </action>
                     </actions>
                 </event-block>
@@ -342,16 +348,6 @@
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="665381594965277">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="419477466928273" type="slime_bullet">
-                    <param id="0" name="Object">hitbox</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="366538545075107" type="slime_bullet" />
-            </actions>
         </event-block>
     </events>
 </c2eventsheet>

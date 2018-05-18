@@ -42,11 +42,12 @@
                         <our_energy>200</our_energy>
                         <max_energy>200</max_energy>
                         <weapon>gun</weapon>
+                        <Dialogo>0</Dialogo>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
                             <properties>
-                                <max-speed>200</max-speed>
+                                <max-speed>250</max-speed>
                                 <acceleration>600</acceleration>
                                 <deceleration>500</deceleration>
                                 <directions>4 directions</directions>
@@ -68,7 +69,7 @@
                         <y>251</y>
                         <z>0</z>
                         <width>16</width>
-                        <height>21</height>
+                        <height>16</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>1</hotspotY>
@@ -143,8 +144,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <boss_health>200</boss_health>
-                        <max_health>200</max_health>
+                        <boss_health>2000</boss_health>
+                        <max_health>2000</max_health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight2">
@@ -188,8 +189,8 @@
                         <x>395.443145752</x>
                         <y>62.650802612</y>
                         <z>0</z>
-                        <width>19</width>
-                        <height>28</height>
+                        <width>16</width>
+                        <height>16</height>
                         <depth>0</depth>
                         <hotspotX>0.526315808</hotspotX>
                         <hotspotY>0.571428597</hotspotY>
@@ -223,8 +224,8 @@
                         <x>235.281860352</x>
                         <y>120.010910034</y>
                         <z>0</z>
-                        <width>19</width>
-                        <height>28</height>
+                        <width>16</width>
+                        <height>16</height>
                         <depth>0</depth>
                         <hotspotX>0.526315808</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -445,13 +446,13 @@
                         <hotspot>Top-left</hotspot>
                     </properties>
                     <instance-variables>
-                        <max_width>128</max_width>
+                        <max_width>800</max_width>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>373.91104126</x>
-                        <y>415.258911133</y>
+                        <x>2.037689209</x>
+                        <y>425.239044189</y>
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>
@@ -503,10 +504,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>438.486938477</x>
-                        <y>423.330993652</y>
+                        <x>403.162750244</x>
+                        <y>432.784790039</y>
                         <z>0</z>
-                        <width>130.552429199</width>
+                        <width>803.65234375</width>
                         <height>15.68107605</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>

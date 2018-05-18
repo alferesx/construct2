@@ -193,7 +193,7 @@
             </conditions>
             <actions>
                 <action behavior="Bullet" id="0" name="Set speed" sid="174303639337434" type="boss">
-                    <param id="0" name="Speed">40</param>
+                    <param id="0" name="Speed">220</param>
                 </action>
                 <action id="-22" name="Set angle toward position" sid="837961285121981" type="boss">
                     <param id="0" name="X">Player.X</param>
@@ -229,7 +229,7 @@
                 <action id="1" name="Set cursor from sprite" sid="426074529798952" type="Mouse">
                     <param id="0" name="Sprite">cursor</param>
                 </action>
-                <action id="-13" name="Set boolean" sid="703625619607214" type="gun">
+                <action id="-13" name="Set boolean" sid="569323661425580" type="gun">
                     <param id="0" name="Instance variable">ativo</param>
                     <param id="1" name="Value">1</param>
                 </action>
@@ -299,6 +299,9 @@
                 <condition id="1" name="Is overlapping another object" sid="737255980584678" type="laser_bullet">
                     <param id="0" name="Object">boss</param>
                 </condition>
+                <condition id="1" name="Is overlapping another object" sid="639010461881792" type="rocket_bullet">
+                    <param id="0" name="Object">boss</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-12" name="Subtract from" sid="673969301122830" type="boss">
@@ -306,6 +309,8 @@
                     <param id="1" name="Value">50</param>
                 </action>
                 <action id="-9" name="Destroy" sid="437481735201091" type="bullet" />
+                <action id="-9" name="Destroy" sid="494861152169616" type="laser_bullet" />
+                <action id="-9" name="Destroy" sid="215976878227250" type="rocket_bullet" />
                 <action id="-27" name="Set effect enabled" sid="634367899540944" type="Sprite">
                     <param id="0" name="Mode">1</param>
                     <param id="1" name="Effect">&quot;ReplaceColor&quot;</param>
@@ -346,7 +351,6 @@
             <actions>
                 <action id="-9" name="Destroy" sid="485843537862936" type="boss" />
                 <action id="-9" name="Destroy" sid="742845938618481" type="Sprite" />
-                <action id="-9" name="Destroy" sid="453054190890725" type="green_slime" />
             </actions>
         </event-block>
         <event-block sid="403984105554325">
@@ -402,6 +406,26 @@
                     <param id="0" name="Instance variable">our_energy</param>
                     <param id="1" name="Value">Player.max_energy</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="654668016654083">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="138365751918522" type="bullet">
+                    <param id="0" name="Object">background_limit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="140784946633513" type="bullet" />
+            </actions>
+        </event-block>
+        <event-block any="1" sid="942671666792024">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="740776723366312" type="slime_b">
+                    <param id="0" name="Object">background_limit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="986402858305732" type="slime_b" />
             </actions>
         </event-block>
     </events>
